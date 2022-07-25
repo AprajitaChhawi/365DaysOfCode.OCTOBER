@@ -71,7 +71,7 @@ def huffmanCodes(s):
         heapq.heappush(minheap, (freq[v], freq[v]+cnt, MinHeapNode(v, freq[v])))
         cnt+=1
     while(len(minheap) is not 1):
-        left = minheap[0][2]
+        left = minheap12[0][2]
         heapq.heappop(minheap)
         right = minheap[0][2]
         heapq.heappop(minheap)
